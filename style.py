@@ -1,24 +1,24 @@
-import turtle as trtl
-import math
-import random
+imporas trtl
+matematika impor
+impor random
 
 def ellipse_x(width, angle_deg):
     angle_rad = math.radians(angle_deg)
-    return width * math.cos(angle_rad)
+    kembali Lebar * Matematika.cos(angle_rad)
 
 def ellipse_y(height, angle_deg):
-    angle_rad = math.radians(angle_deg)
-    return height * math.sin(angle_rad)
+ Angle_rad = Matematika radians(angle_deg)
+    kembali tinggi * matematika.sin(angle_rad)
 
 screen = trtl.Screen()
 screen.bgcolor("#d3dae8")
 screen.setup(900, 800)
-screen.title("Happy Birthday Sayangku")
+screen.title("Happy Birthday Bubbyku")
 
-pen = trtl.Turtle()
+Pen = Pen = )
 pen.pensize(3)
 pen.speed(99999999999999999999999999999)
-pen.hideturtle()
+pena.hideturtle()
 
 screen.tracer(1)
 screen.delay(0)
@@ -39,13 +39,13 @@ color_palette = {
     "confetti_colors": ["#4CAF50", "#FFC107", "#2196F3", "#FF5722", "#9C27B0", "#3F51B5", "#00BCD4", "#009688"]
 }
 
-def draw_ellipse(t, width, height, color, fill_color, y_offset=0):
+def draw_elipsdraw_elips(t, lebar, tinggi, warna, fill_color, y_offset=0):
     t.penup()
     t.goto(width, y_offset)
     t.pendown()
     t.pencolor(color)
     t.begin_fill()
-    for deg in range(360):
+    untuk deg di rentang(360):
         x = ellipse_x(width, deg)
         y = ellipse_y(height, deg) + y_offset
         t.goto(x, y)
@@ -61,30 +61,30 @@ def draw_candle(t, x_pos, y_base, height):
     t.pendown()
     t.pencolor(color_palette["teal"])
     t.begin_fill()
-    for deg in range(360):
+    untuk deg di range(360):
         x = ellipse_x(4, deg) + x_pos
         y = ellipse_y(1, deg) + y_base
         t.goto(x, y)
     t.goto(x_pos + 4, y_base + height)
-    for deg in range(540):
+    untuk deg di range(540):
         x = ellipse_x(4, deg) + x_pos
-        y = ellipse_y(1, deg) + y_base + height
-        t.goto(x, y)
-    t.goto(x_pos - 4, y_base)
-    t.fillcolor(color_palette["teal"])
-    t.end_fill()
+ y = ellipse_y(1, deg) + y_base + tinggi ellipse_y(1, deg) + y_base + height
+ t.goto(x, y) goto(x, y)
+ t.goto (x_pos - 4, y_base) goto(x_pos - 4, y_base)
+ t.fillcolor(color_palette["teal"]) fillcolor(color_palette["teal"])
+ t.end_fill() end_fill()
     
-    t.pencolor("white")
-    t.pensize(4)
-    for i in range(1, 6):
-        t.goto(x_pos + 4, y_base + 10 * i)
-        t.penup()
-        t.goto(x_pos - 4, y_base + 10 * i)
-        t.pendown()
-    t.penup()
-    t.goto(x_pos, y_base + height)
-    t.pendown()
-    t.goto(x_pos, y_base + height + 10)
+ t.pencolor (putih) pencolor("white")
+ t.pensize(4) pensize(4)
+ untuk i dalam jangkauan (1, 6): jangkauan (1, 6): for i in range(1, 6):
+ t.goto (x_pos + 4, y_base + 10 * i) goto(x_pos + 4, y_base + 10 * i)
+         t.penup() penup()
+ t.goto (x_pos - 4, y_base + 10 * i) goto(x_pos - 4, y_base + 10 * i)
+ t.pendown() pendown()
+     t.penup() penup()
+ t.goto(x_pos, y_base + tinggi) goto(x_pos, y_base + height)
+ t.pendown() pendown()
+ t.goto(x_pos, y_base + tinggi + 10) goto(x_pos, y_base + height + 10)
     t.pensize(3)
     
     t.penup()
@@ -92,7 +92,7 @@ def draw_candle(t, x_pos, y_base, height):
     t.pendown()
     t.pencolor(color_palette["flame_orange"])
     t.begin_fill()
-    for deg in range(360):
+    untuk deg di range(360):
         x = ellipse_x(4, deg) + x_pos
         y = ellipse_y(10, deg) + y_base + height + 20
         t.goto(x, y)
@@ -109,7 +109,7 @@ def add_dots(t, count, x_min, x_max, y_min, y_max, size_min, size_max):
         t.goto(x, y)
         t.pendown()
         t.dot(random.randint(size_min, size_max), random.choice(colors))
-
+0
 # Mulai gambar
 
 draw_cake_layer(pen, 150, 60, "white", color_palette["light_green"], 0)
@@ -259,7 +259,7 @@ pen.write("Happy Birthday", font=("Curlz MT", 50 , 'bold'))
 pen.penup()
 pen.right(40)
 pen.forward(-100)
-pen.write("Trianaycia", font=("Curlz MT", 40, 'bold'))
+pen.write("Almira Aila Raysa", font=("Curlz MT", 40, 'bold'))
 
 screen.update()
 trtl.done()
